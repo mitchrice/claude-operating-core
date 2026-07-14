@@ -1,0 +1,15 @@
+{
+  "name": "claude-operating-core",
+  "owner": {
+    "name": "Joshua Thompson",
+    "url": "https://github.com/josherau"
+  },
+  "plugins": [
+    {
+      "name": "operating-core",
+      "source": "../",
+      "description": "Foundational skill pack: review-panel, focus-group, storm-research, extract-approach, and the advisor agent",
+      "version": "1.0.0"
+    }
+  ]
+}

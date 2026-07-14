@@ -1,0 +1,10 @@
+{
+  "name": "operating-core",
+  "description": "The operating core: five foundational pieces that gate and compound everything an AI-assisted operator ships. Independent review panels (never grade your own work), synthetic focus-group pretesting, multi-perspective STORM research, a reasoning recorder for hard solves, and a strong-advisor agent for cheap-executor sessions.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Joshua Thompson"
+  },
+  "repository": "https://github.com/josherau/claude-operating-core",
+  "license": "MIT"
+}
