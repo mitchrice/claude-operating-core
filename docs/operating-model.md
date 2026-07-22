@@ -1,6 +1,6 @@
 # The Operating Model
 
-How the five pieces compose into one loop. The skills are the machinery; this document is the doctrine that makes them mandatory. Skills that are optional get skipped exactly when they matter most, so the enforcement lives in CLAUDE.md, which every session loads.
+How the pieces compose into one loop. The skills are the machinery; this document is the doctrine that makes them mandatory. Skills that are optional get skipped exactly when they matter most, so the enforcement lives in CLAUDE.md, which every session loads.
 
 ## The loop
 
@@ -72,3 +72,5 @@ or when I ask for a quick answer.
 ## Adoption order
 
 If you adopt one piece, adopt review-panel; it changes shipped quality immediately and needs no setup. Then extract-approach (needs only a learnings folder and an index). Then storm-research. The focus-group pays off in proportion to persona quality, so budget a real research pass per business panel before trusting its verdicts. The advisor agent matters once you deliberately run sessions on cheaper models.
+
+Once two or more pieces are in use, run `second-brain setup`: the vault is what turns the gates from filters into a flywheel, because every gate failure and hard solve now lands somewhere every future session reads (see [second-brain.md](second-brain.md)). Schedule the `vault-gardener` the same week; an untended vault decays faster than it accretes.

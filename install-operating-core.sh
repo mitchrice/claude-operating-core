@@ -14,7 +14,7 @@ SKILLS_DIR="$HOME/.claude/skills"
 AGENTS_DIR="$HOME/.claude/agents"
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 
-SKILLS=(review-panel focus-group storm-research extract-approach)
+SKILLS=(review-panel focus-group storm-research extract-approach second-brain vault-gardener)
 
 echo ""
 echo "Claude Operating Core installer"
@@ -54,7 +54,7 @@ echo "Installing agent..."
 cp "$SCRIPT_DIR/agents/advisor.md" "$AGENTS_DIR/advisor.md"
 
 echo ""
-echo "Done. 4 skills + 1 agent installed."
+echo "Done. 6 skills + 1 agent installed."
 echo "Next: read docs/operating-model.md and paste the CLAUDE.md snippet"
 echo "so the gates are mandatory, then restart Claude Code."
 echo ""
