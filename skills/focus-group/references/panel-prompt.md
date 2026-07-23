@@ -2,7 +2,7 @@
 
 Give each panel subagent this prompt, filling in the placeholders. One persona per subagent; run them in parallel.
 
-Placeholder mechanics: `{{PERSONA_FILE_PATH}}` and `{{CONTENT}}` are direct fills. `{{IF_OFFER_MODE}}…{{END_IF}}` is a conditional block — in **ad mode delete the entire block including the markers**; in **offer mode keep the contents and delete just the marker lines** (same for the BUY line in the output format).
+Placeholder mechanics: `{{PERSONA_FILE_PATH}}` and `{{CONTENT}}` are direct fills. `{{IF_OFFER_MODE}}…{{END_IF}}` and `{{IF_SOCIAL_MODE}}…{{END_IF}}` are conditional blocks — when the mode doesn't apply, **delete the entire block including the markers**; when it does, keep the contents and delete just the marker lines (same for the BUY/SHARE lines in the output format). Social mode = content whose primary goal is shares/forwards/organic reach (see [sharing-psychology.md](sharing-psychology.md)).
 
 ---
 
@@ -28,6 +28,12 @@ You are part of a panel of prospects reviewing this content as a focus group. Gi
 6. **Would you buy/sign up? YES or NO — one word, then your reason.** (Sales pages, offers, and launches only.)
 {{END_IF}}
 
+{{IF_SOCIAL_MODE}}
+7. **Would you share this? YES or NO — then: with whom exactly (name the person or group in your life), and what would sending it say about YOU to them?** If no: what's the social risk — would it make you look boring, behind, salesy, preachy? Be honest about the trade-off in your head.
+{{END_IF}}
+
+(Both blocks may be kept at once — a launch email can be offer AND social mode. If only social mode applies, renumber its question to 6. The question numbers are cosmetic; the labeled output lines below are what matters.)
+
 ## Output format (return exactly this — your final message is data, not prose)
 
 ```
@@ -40,4 +46,5 @@ WEAKNESSES:
 ACTION TEST: {Yes/No/Maybe} — what would seal it: {specific missing thing}
 NOT FOR: {one sentence}
 BUY: {YES/NO — reason}   ← offer mode only
+SHARE: {YES/NO — who I'd send it to and what that says about me / or the social risk that stops me}   ← social mode only
 ```
