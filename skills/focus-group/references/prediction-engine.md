@@ -5,7 +5,7 @@ Score each copywriter variant 0-100. Inputs: panel consensus, copywriting fundam
 ## Who scores & anchoring (reproducibility rules)
 
 - **A fresh subagent scores** — never the copywriter agent that wrote the variants, and never from memory of drafting. It receives this rubric, ALL panel feedback verbatim, the business context + weight overrides, and the variants.
-- **Anchor in panel data, not vibes:** mean panel RELEVANCE (1-10) × 2.5 sets the starting anchor for Relatability (then adjust ±3 max with cited quotes). The ACTION TEST tally (Yes/Maybe/No) anchors CTA Power; the BUY tally (offer mode) and proof-specific feedback anchor Credibility; the SHARE tally (social mode) anchors CTA Power and Emotional Resonance. Every category score must cite at least one verbatim panel quote or tally as evidence.
+- **Anchor in panel data, not vibes:** mean panel RELEVANCE (1-10) × 2.5 sets the starting anchor for Relatability (then adjust ±3 max with cited quotes). The ACTION TEST tally (Yes/Maybe/No) anchors CTA Power; the BUY tally (offer mode) and proof-specific feedback anchor Credibility; the SHARE tally (social mode) anchors CTA Power and Emotional Resonance (see the social-mode reinterpretation under category 5 for how). Every category score must cite at least one verbatim panel quote or tally as evidence.
 - Weight overrides must always sum to 100 — if an index note's override doesn't, use the defaults and flag the note for repair.
 - Wrong-fit personas are EXCLUDED from tallies used for anchoring (their job is targeting diagnostics, reported separately).
 
