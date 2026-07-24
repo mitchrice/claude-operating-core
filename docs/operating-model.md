@@ -9,13 +9,13 @@ How the pieces compose into one loop. The skills are the machinery; this documen
 storm-research  ->  cheap executor  ->  review-panel      ->  deliver  ->  extract-approach
                     + advisor           (+ focus-group          |            + session write-back
                       checkpoints        for outbound            |
-                                         content)                v
-                                                            run logs calibrate
-                                                            future gates
+                    + sales-council      content)                v
+                      for sales                             run logs calibrate
+                      strategy                              future gates
 ```
 
 1. **Research before opinion.** Any real research question goes through storm-research. The deliverable is a briefing with a recommended action, a contradiction map, and confidence scores, not a book report.
-2. **Make cheap, advise strong.** The session runs on the cheapest model that can do the work. Mechanical subtasks (searches, file sweeps, formatting, template drafts) go to even cheaper subagents. When the session model is not the strongest available, the advisor agent gets consulted at three checkpoints: before committing to an approach, before declaring done, and when stuck. Two or three consults per task is typical. If the session is already on the strongest model, skip the advisor and lean harder on cheap subagents.
+2. **Make cheap, advise strong.** The session runs on the cheapest model that can do the work. Mechanical subtasks (searches, file sweeps, formatting, template drafts) go to even cheaper subagents. When the session model is not the strongest available, the advisor agent gets consulted at three checkpoints: before committing to an approach, before declaring done, and when stuck. Two or three consults per task is typical. If the session is already on the strongest model, skip the advisor and lean harder on cheap subagents. For sales and persuasion work specifically (offer design, pricing, negotiation, pitches, copy strategy), the sales-council skill is the domain advisor at the make stage — it designs and diagnoses, but its output is never final: it feeds the same gates as everything else, and when a focus-group run stalls, the council is what diagnoses *why* before the next rewrite round.
 3. **Gate before ship.** The agent that made the work never decides it is ready. review-panel grades every substantive deliverable against documented standards. Outbound content (ads, emails, sales pages, newsletters, social posts, offers) additionally has to clear the focus-group panel at 85+. The operator can override case by case with an explicit "skip the panel."
 4. **Learn before the session ends.** Hard solves trigger extract-approach at solve time. Mistakes get logged the moment they happen, one lesson per file, each indexed with one line in a file every session loads. Sessions end with a short log: what was done, decisions with rationale, open items, gotchas.
 
@@ -71,6 +71,6 @@ or when I ask for a quick answer.
 
 ## Adoption order
 
-If you adopt one piece, adopt review-panel; it changes shipped quality immediately and needs no setup. Then extract-approach (needs only a learnings folder and an index). Then storm-research. The focus-group pays off in proportion to persona quality, so budget a real research pass per business panel before trusting its verdicts. The advisor agent matters once you deliberately run sessions on cheaper models.
+If you adopt one piece, adopt review-panel; it changes shipped quality immediately and needs no setup. Then extract-approach (needs only a learnings folder and an index). Then storm-research. The focus-group pays off in proportion to persona quality, so budget a real research pass per business panel before trusting its verdicts. The advisor agent matters once you deliberately run sessions on cheaper models. sales-council is the one domain-specific piece in the pack — adopt it when sales, pricing, or persuasion work is a recurring part of your operation, and wire it under the gates from day one (advisors advise, panels predict, graders grade).
 
 Once two or more pieces are in use, run `second-brain setup`: the vault is what turns the gates from filters into a flywheel, because every gate failure and hard solve now lands somewhere every future session reads (see [second-brain.md](second-brain.md)). Schedule the `vault-gardener` the same week; an untended vault decays faster than it accretes.
