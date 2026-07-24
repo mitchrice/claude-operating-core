@@ -1,7 +1,7 @@
 {
   "name": "operating-core",
-  "description": "The operating core: the foundational pieces that gate and compound everything an AI-assisted operator ships. Independent review panels, synthetic focus-group pretesting, multi-perspective STORM research, a reasoning recorder, a second-brain vault with a daily gardener, and a strong-advisor agent for cheap-executor sessions.",
-  "version": "1.1.0",
+  "description": "The operating core: the foundational pieces that gate and compound everything an AI-assisted operator ships. Independent review panels, synthetic focus-group pretesting, multi-perspective STORM research, a reasoning recorder, a second-brain vault with a daily gardener, a strong-advisor agent for cheap-executor sessions, and a 7-advisor sales council for offer, pricing, negotiation, pitch, and copy strategy.",
+  "version": "1.2.0",
   "author": {
     "name": "Joshua Thompson"
   },
