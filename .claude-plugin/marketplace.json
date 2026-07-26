@@ -7,7 +7,7 @@
   "plugins": [
     {
       "name": "operating-core",
-      "source": "../",
+      "source": "./",
       "description": "Foundational skill pack: review-panel, focus-group, storm-research, extract-approach, second-brain, vault-gardener, sales-council, and the advisor agent",
       "version": "1.2.0"
     }
